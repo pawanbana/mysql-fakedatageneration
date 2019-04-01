@@ -38,7 +38,7 @@ In app.js
 - `/query`                             =>    Post Route provide the query in the body.
 - `/generatedata/:tablename/:limit`    =>    Post Route provide the tablename and limit in the params.
 
-**Points to Consider**
+## Points to Consider
 
 it can generate data of type 
 
