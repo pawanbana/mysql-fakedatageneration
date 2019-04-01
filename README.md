@@ -15,10 +15,10 @@ This Api is used to generates fake data corresponds to schema provided by you.
 
 **Setting Database**
 In app.js 
-`host: 'localhost',
+```host: 'localhost',
     user: 'mysql_username',// default is root
     password: 'mysql_password', // default is empty
-    database: 'your_dbname'`
+    database: 'your_dbname'```
     
     
 **To get project running**
