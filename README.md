@@ -28,7 +28,7 @@ In app.js
 `npm start`    
 
 
-**Routes **
+**Routes**
 
 - `/createtable`                       =>    Post Route provide the schema of your table.
 - `/addtheindex`                       =>    Post Route provide the indexname, tablename, columns, unique.
