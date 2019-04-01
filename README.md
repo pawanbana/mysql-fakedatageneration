@@ -18,7 +18,9 @@ In app.js
 ```host: 'localhost',
     user: 'mysql_username',// default is root
     password: 'mysql_password', // default is empty
-    database: 'your_dbname'```
+    database: 'your_dbname'
+
+```
     
     
 **To get project running**
