@@ -7,10 +7,12 @@ This Api is used to generates fake data corresponds to schema provided by you.
 - query your Db
 
 **Prerequisites**
+
 * [NodeJs](https://nodejs.org/en/) - NodeJs required.
 * [MySql](https://www.mysql.com/downloads/) - MySql required.
 
 **First install all dependencies**
+
 `npm install`
 
 **Setting Database**
