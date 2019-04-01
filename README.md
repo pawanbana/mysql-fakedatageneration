@@ -16,8 +16,8 @@ This Api is used to generates fake data corresponds to schema provided by you.
 **Setting Database**
 In app.js 
 ```host: 'localhost',
-    user: 'mysql_username',// default is root
-    password: 'mysql_password', // default is empty
+    user: 'mysql_username',       // default is root
+    password: 'mysql_password',   // default is empty
     database: 'your_dbname'
 
 ```
@@ -29,12 +29,12 @@ In app.js
 
 
 **Routes **
-- `/tweets`            =>    Post Route provide text in body to create a tweet.
-- `/createtable`       =>    Post Route provide the schema of your table.
-- `/addtheindex` =>  Post Route provide the indexname, tablename, columns, unique.
-- `/droptheindex` => Post Route provide the indexname, tablename.
-- `/query`  =>  Post Route provide the query in the body.
-- `/generatedata/:tablename/:limit`  =>  Post Route provide the tablename and limit in the params.
+
+- `/createtable`                       =>    Post Route provide the schema of your table.
+- `/addtheindex`                       =>    Post Route provide the indexname, tablename, columns, unique.
+- `/droptheindex`                      =>    Post Route provide the indexname, tablename.
+- `/query`                             =>    Post Route provide the query in the body.
+- `/generatedata/:tablename/:limit`    =>    Post Route provide the tablename and limit in the params.
 
 
 
