@@ -33,32 +33,6 @@ app.post('/createtable', (req, res) => {
 });
 
 
-//post route to add the index on a given table.
-
-app.post('/addtheindex',(req,res)=>{
-    const query = req.body;
-    var sqlQuery="";
-  if(query.unique === true){
-      sqlquery = `CREATE UNIQUE INDEX ${query.indexname} ON ${query.tablename} (${query.columns.toString()})`;
-  }
-  else{
-    sqlquery = `CREATE INDEX ${query.indexname} ON ${query.tablename} (${query.columns.toString()})`;
-  }
-   connection.query(sqlQuery,(err,rows)=>{
-       if(err){return res.send(err);}
-       return res.send(rows);
-   });
-});
-
-// post route to drop a index on a table.
-app.post('/droptheindex',(req,res)=>{
-    var query = req.body;
-    var sqlQuery = `DROP IN{DEX ${query.indexname} ON ${query.tablename}`;
-    connection.query(sqlQuery,(err,rows)=>{
-        if(err){ return res.send(err);}
-        return res.send(rows);
-    });
-});
 
 
 app.post("/query",(req,res)=>{

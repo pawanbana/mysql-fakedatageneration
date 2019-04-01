@@ -2,7 +2,6 @@
 This Api is used to generates fake data corresponds to schema provided by you.
 
 - Create A table 
-- Add/Drop Indices
 - Generate fake data
 - query your Db
 
@@ -33,8 +32,6 @@ In app.js
 **Routes**
 
 - `/createtable`                       =>    Post Route provide the schema of your table.
-- `/addtheindex`                       =>    Post Route provide the indexname, tablename, columns, unique.
-- `/droptheindex`                      =>    Post Route provide the indexname, tablename.
 - `/query`                             =>    Post Route provide the query in the body.
 - `/generatedata/:tablename/:limit`    =>    Post Route provide the tablename and limit in the params.
 
