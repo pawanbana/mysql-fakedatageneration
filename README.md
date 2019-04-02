@@ -1,4 +1,4 @@
-# mysql-fakedatageneration
+# MySql fake data generation tool
 This Api is used to generates fake data corresponds to schema provided by you.
 
 - Create A table 
@@ -15,19 +15,17 @@ This Api is used to generates fake data corresponds to schema provided by you.
 `npm install`
 
 **Setting Database**
+
 In app.js 
 ```host: 'localhost',
     user: 'mysql_username',       // default is root
     password: 'mysql_password',   // default is empty
     database: 'your_dbname'
-
 ```
-    
     
 **To get project running**
 
-`npm start`    
-
+`node app.js`    
 
 **Routes**
 
@@ -37,7 +35,7 @@ In app.js
 
 ## Points to Consider
 
-it can generate data of type 
+It can generate data of type 
 
 - varchar
 - longtext
@@ -46,6 +44,9 @@ it can generate data of type
 - tinyint
 - datetime
 
+you can Generate your random function based on your requirements just set a 
+new function inside generatefunction.js or overwrite the existing one. 
+
 
 
 
@@ -53,6 +54,6 @@ it can generate data of type
 
 * [ExpressJs](http://expressjs.com/) - The Framework used
 * [Lodash](https://lodash.com/) - To pick selected data from request
-
+* [Faker](https://www.npmjs.com/package/faker) - To Generate fake Data
 
 
