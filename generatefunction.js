@@ -22,14 +22,14 @@ module.exports = {
     handler: () => {
       return (
         faker.random.number({ min: 1, max: 12345 }) +
-        faker.random.number({ min: 234343, max: 234342322 }) +
-        faker.random.number({ min: 1000000000, max: 20000000000 })
+        faker.random.number({ min: 234343, max: 234342 }) +
+        faker.random.number({ min: 10000, max: 20000 })
       );
     }
   },
   tinyintGenerate: {
     handler: () => {
-      return faker.random.number({ min: 0, max: 255 });
+      return faker.random.number({ min: 0, max: 254 });
     }
   },
   datetimeGenerate: {
